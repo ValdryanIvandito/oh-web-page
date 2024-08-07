@@ -88,10 +88,10 @@ export default async function Home({ params: { locale } }) {
 
         {/*-----CONTENT-XL-LG-MD-----*/}
         <div
-          className="hidden md:block relative bg-cover bg-center h-200"
+          className="hidden md:block relative bg-cover bg-center h-160 lg:h-200"
           style={{ backgroundImage: "url('/bg-children.webp')" }}
         >
-          <div className="absolute inset-0 bg-white text-white bg-opacity-50 flex flex-col items-center justify-center px-28">
+          <div className="absolute inset-0 bg-white text-white bg-opacity-50 flex flex-col items-center justify-center px-16 lg:px-28">
             <div className="grid grid-cols-2 w-full">
               <div className=" bg-purple-600 flex flex-col text-left justify-center items-start p-3 lg:p-8">
                 <p className="text-2xl lg:text-4xl font-bold mb-2">{t("t5")}</p>
@@ -110,13 +110,14 @@ export default async function Home({ params: { locale } }) {
               </div>
             </div>
             <div className="grid grid-cols-3 w-full">
-              <div className=" bg-purple-800 flex flex-col text-left justify-between items-start p-4 lg:p-8">
+              <div className=" bg-purple-800 flex flex-col text-left justify-between items-start p-4 lg:p-6">
                 <div>
                   <p className="text-xl lg:text-3xl font-bold">{t("t8")}</p>
-                  <p className="text-xl lg:text-3xl font-bold mb-2">
+                  <p className="text-xl lg:text-3xl font-bold">
                     {t("t9")}
                   </p>
-                  <p className="text-md lg:text-xl font-bold mb-14">
+                  <p className="text-xl lg:text-3xl font-bold mb-2">12:00 PM UTC</p>
+                  <p className="text-md lg:text-xl font-bold mb-8">
                     {t("t10")}
                   </p>
                 </div>
@@ -129,13 +130,14 @@ export default async function Home({ params: { locale } }) {
                   {t("common:button_join_us")}
                 </Link>
               </div>
-              <div className=" bg-purple-600 flex flex-col text-left justify-between items-start p-4 lg:p-8">
+              <div className=" bg-purple-600 flex flex-col text-left justify-between items-start p-4 lg:p-6">
                 <div>
                   <p className="text-xl lg:text-3xl font-bold">{t("t8")}</p>
-                  <p className="text-xl lg:text-3xl font-bold mb-2">
+                  <p className="text-xl lg:text-3xl font-bold">
                     {t("t11")}
                   </p>
-                  <p className="text-md lg:text-xl font-bold mb-14">
+                  <p className="text-xl lg:text-3xl font-bold mb-2">12:00 PM UTC</p>
+                  <p className="text-md lg:text-xl font-bold mb-8">
                     {t("t12")}
                   </p>
                 </div>
@@ -147,13 +149,13 @@ export default async function Home({ params: { locale } }) {
                   {t("common:button_join_us")}
                 </Link>
               </div>
-              <div className=" bg-purple-400 flex flex-col text-left justify-between items-start p-4 lg:p-8">
+              <div className=" bg-purple-400 flex flex-col text-left justify-between items-start p-4 lg:p-6">
                 <div>
                   <p className="text-xl lg:text-3xl font-bold">{t("t15")}</p>
                   <p className="text-xl lg:text-3xl font-bold mb-2">
                     {t("t16")}
                   </p>
-                  <p className="text-md lg:text-xl font-bold mb-14">
+                  <p className="text-md lg:text-xl font-bold mb-8">
                     {t("t17")}
                   </p>
                 </div>
@@ -166,7 +168,7 @@ export default async function Home({ params: { locale } }) {
                 </Link>
               </div>
             </div>
-            <div className="bg-orange-600 w-full flex flex-col justify-between items-start p-4 lg:p-8">
+            <div className="bg-orange-600 w-full flex flex-col justify-between items-start p-4 lg:p-6">
               <div>
                 <p className="text-xl lg:text-3xl font-bold mb-2">{t("t13")}</p>
                 <p className="text-md lg:text-xl font-bold mb-14">{t("t14")}</p>
@@ -184,10 +186,10 @@ export default async function Home({ params: { locale } }) {
 
         {/*-----NAVBAR-SM-----*/}
         <div
-          className="block md:hidden relative bg-cover bg-center h-200"
+          className="block md:hidden relative bg-cover bg-center h-160"
           style={{ backgroundImage: "url('/bg-children.webp')" }}
         >
-          <div className="absolute inset-0 bg-white text-white bg-opacity-50 flex flex-col items-center justify-center px-10">
+          <div className="absolute inset-0 bg-white text-white bg-opacity-50 flex flex-col items-center justify-center px-6">
             <div className=" bg-purple-600 flex flex-col text-left justify-center items-start p-3 lg:p-8 w-full">
               <p className="text-lg font-bold">{t("t5")}</p>
               <p className="text-lg font-bold">{t("t6")}</p>
@@ -207,7 +209,8 @@ export default async function Home({ params: { locale } }) {
               <div className=" bg-purple-800 flex flex-col text-left justify-between items-start p-4 lg:p-8">
                 <div>
                   <p className="text-md font-bold">{t("t8")}</p>
-                  <p className="text-md font-bold mb-1">{t("t9")}</p>
+                  <p className="text-md font-bold">{t("t9")}</p>
+                  <p className="text-md font-bold mb-1">12:00 PM UTC</p>
                   <p className="text-xs font-bold mb-8">{t("t10")}</p>
                 </div>
 
@@ -222,7 +225,8 @@ export default async function Home({ params: { locale } }) {
               <div className=" bg-purple-600 flex flex-col text-left justify-between items-start p-4 lg:p-8">
                 <div>
                   <p className="text-md font-bold">{t("t8")}</p>
-                  <p className="text-md font-bold mb-1">{t("t11")}</p>
+                  <p className="text-md font-bold">{t("t11")}</p>
+                  <p className="text-md font-bold mb-1">12:00 PM UTC</p>
                   <p className="text-xs font-bold mb-8">{t("t12")}</p>
                 </div>
                 <Link
