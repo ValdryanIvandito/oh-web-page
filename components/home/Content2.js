@@ -20,7 +20,7 @@ export default function Content2() {
               <p className="text-2xl lg:text-4xl font-bold mb-2">{t("t5")}</p>
               <p className="text-2xl lg:text-4xl font-bold">{t("t6")}</p>
             </div>
-            <div className="bg-purple-500 flex justify-start items-center w-2/3 lg:w-1/2 p-4">
+            <div className="bg-purple-500 flex justify-start items-center w-2/3 lg:w-1/2 p-2">
               <SimpleVideoPlayer src="/kkr-sorong.mp4" type="video/mp4" />
             </div>
           </div>
