@@ -78,7 +78,7 @@ export default function Content2() {
           <div className="bg-orange-600 w-full flex flex-col justify-between items-start p-4 lg:p-6">
             <div>
               <p className="text-xl lg:text-3xl font-bold mb-2">{t("t13")}</p>
-              <p className="text-md lg:text-xl font-bold mb-14">{t("t14")}</p>
+              <p className="text-md lg:text-xl font-bold mb-8">{t("t14")}</p>
             </div>
             <Link
               href={process.env.NEXT_PUBLIC_LINK_YOUTUBE_OH}
