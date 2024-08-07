@@ -28,7 +28,7 @@ export default function SimpleVideoPlayer({ src, type }) {
   };
 
   return (
-    <div className="bg-slate-800 text-white text-xs font-bold">
+    <div className="bg-slate-800 text-white text-xs font-semibold">
       <video
         ref={videoRef}
         autoPlay
@@ -39,16 +39,15 @@ export default function SimpleVideoPlayer({ src, type }) {
         <source src={src} type={type} />
         {t("t7")}
       </video>
-      <div className="flex justify-center items-center p-2 gap-3 md:gap-6">
-        <button
-          className="hover:bg-slate-500 border-2 border-white rounded-full w-16 py-1 px-2"
+      <div className="flex justify-center items-center p-3 gap-4">
+        {/* <button
+          className="hover:bg-slate-500 border-2 border-white rounded-full w-18 py-1 px-2"
           onClick={handlePlayPauseToggle}
         >
           {isPlaying ? t("Pause") : t("Play")}{" "}
-          {/* Toggle text based on state */}
-        </button>
+        </button> */}
         <button
-          className="hover:bg-slate-500 border-2 border-white rounded-full w-16 py-1 px-2"
+          className="hover:bg-slate-500 border-2 border-white rounded-full w-20 py-1 px-2"
           onClick={handleMute}
         >
           {isMute ? t("Unmute") : t("Mute")} {/* Toggle text based on state */}
