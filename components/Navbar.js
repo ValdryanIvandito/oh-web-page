@@ -6,6 +6,9 @@ import Image from "next/image";
 import LanguageChanger from "@/components/LanguageChanger";
 import { useTranslation } from "react-i18next";
 
+const bibleEducationLink = process.env.NEXT_PUBLIC_LINK_BIBLE_EDUCATION;
+const donationLink = process.env.NEXT_PUBLIC_LINK_DONATION;
+
 export default function Navbar({ pageTitle }) {
   const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
@@ -15,8 +18,8 @@ export default function Navbar({ pageTitle }) {
     { href: "/about-us", label: t("common:about_us") },
     { href: "/", label: t("common:ministry") },
     { href: "/", label: t("common:mission") },
-    { href: "/", label: t("common:education") },
-    { href: "/", label: t("common:support_us") },
+    { href: bibleEducationLink, label: t("common:education") },
+    { href: donationLink, label: t("common:support_us") },
     { href: "/", label: t("common:contact_us") },
   ];
 
@@ -46,10 +49,7 @@ export default function Navbar({ pageTitle }) {
       {/*-----NAVBAR-XL-LG-MD-----*/}
       <div className="hidden md:block bg-slate-800 bg-opacity-75 py-6 px-12 w-full fixed">
         <div className="flex justify-between items-center">
-          <Link
-            href={"/"}
-            className="flex justify-center items-center"
-          >
+          <Link href={"/"} className="flex justify-center items-center">
             <Image
               src="/logo-oh.png"
               alt="Open Heaven Foundation Logo"
@@ -144,10 +144,7 @@ export default function Navbar({ pageTitle }) {
       {/*-----NAVBAR-SM-----*/}
       <div className="block md:hidden bg-slate-800 bg-opacity-75 text-white font-bold py-4 px-6 w-full fixed">
         <div className="flex justify-center items-center mt-3 gap-4">
-          <Link
-            href={"/"}
-            className="flex justify-center items-center"
-          >
+          <Link href={"/"} className="flex justify-center items-center">
             <Image
               src="/logo-oh.png"
               alt="Open Heaven Foundation Logo"
